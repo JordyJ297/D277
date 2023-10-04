@@ -1,0 +1,126 @@
+h1 {
+    text-align: center;
+}
+
+p, li, ul, ol {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.5;
+    color: #333;
+    text-align: center;
+}
+
+.special-text {
+    color: #007BFF;
+    font-weight: bold;
+}
+
+#main-content {
+    position: relative;
+    width: 70%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+    max-width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: #555;
+    padding: 10px 15px;
+}
+
+nav a:hover {
+    background-color: #007BFF;
+    color: #FFF;
+}
+
+aside {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 300px;
+    padding: 15px;
+    margin-top: 20rem;
+    margin-right: 10rem;
+    background-color: #f0f7ff;
+    border: 1px solid #d6e4f0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+ul, ol {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.5;
+    color: #333;
+    text-align: center;
+    padding-left: 0;
+}
+
+ul li, ol li {
+    text-align: center;
+    position: relative;
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+ul li::before, ol li::before {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+body {
+    text-align: center;
+}
+
+table {
+    width: 80%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    border: 2px solid #333;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #f2f2f2;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Newsletter Sign-Up</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="trenton.html">Trenton</a></li>
+        <li><a href="newark.html">Newark</a></li>
+        <li><a href="atlanticcity.html">Atlantic City</a></li>
+        <li><a href="contact.html">Sign Up</a></li>
+    </ul>
+</nav>
+
+<section>
+    <p>Please fill out the below form:  </p>
+    <form>
+        <label for="firstName">First Name: </label>
+        <input id="firstName" type="text" placeholder="Enter your first name">
+        <label for="lastName">Last Name: </label>
+        <input id="lastName" type="text" placeholder="Enter your last name">
+        <label for="Email">Email: </label>
+        <input id="Email" type="email" placeholder="Enter your email address">
+        <label for="verifyEmail">Verify Email: </label>
+        <input id="verifyEmail" type="email" placeholder="Confirm your email address">
+        <label for="comment">Comments: </label>
+        <textarea id="comment" placeholder="Enter a comment"></textarea>
+        <button onclick="checkEmail()" style="margin-top: 20px;">Submit</button>
+    </form>
+</section>
+
+<aside>
+    <p><strong>Concerns?</strong></p>
+    <p>Email us at fakeEmail@dev.com</p>
+</aside>
+
+</body>
+<script>
+    function checkEmail(){
+        let email = document.getElementById("Email");
+        let verifyEmail = document.getElementById("verifyEmail");
+        if(email.value != verifyEmail.value){
+            alert("Email values do not match. Please check and try again.")
+        }
+        else{
+            alert("You are signed up!")
+        }
+    }
+</script>
+</html>
